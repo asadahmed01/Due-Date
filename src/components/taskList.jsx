@@ -40,9 +40,9 @@ function TaskList({ tasks, onDelete, date }) {
         {tasks.map((task, index) => (
           <li
             key={index}
-            className="border-l-8 border-blue-500 rounded-lg p-3 mt-5 bg-gray-100 w-11/12 md:w-1/2 flex place-items-center"
+            className="border-l-8 border-blue-500 rounded-lg p-3 mt-5 bg-gray-100 w-11/12 md:w-1/2 flex place-items-center justify-between relative"
           >
-            <div className="mr-16">
+            <div className="mr-16 text-left text-xl">
               <h3 className="font-bold text-blue-900 pb-3 uppercase">
                 {task.name}
               </h3>
@@ -54,7 +54,7 @@ function TaskList({ tasks, onDelete, date }) {
               <Countdown date={task.dueDate} renderer={renderer} />
             </div>
 
-            <div className="md:ml-16 md:mt-10 ">
+            <div className="md:ml-16 md:mt-10 absolute bottom-0 right-5">
               <button
                 onClick={() => onDelete(index)}
                 className="md:mr-5 mb-5 text-red-500 hover:text-red-600 focus:outline-none"
@@ -62,7 +62,7 @@ function TaskList({ tasks, onDelete, date }) {
                 <FaTrash />
               </button>
 
-              <button className=" text-blue-700 hover:text-blue-500 focus:outline-none">
+              <button className=" text-blue-700 hover:text-blue-500 focus:outline-none ml-5">
                 <FaPen />
               </button>
             </div>

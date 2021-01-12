@@ -57,7 +57,7 @@ function Input(props) {
   return (
     <div className="text-center mt-5">
       <button
-        className="text-2xl text-gray-500 border border-blue-500 rounded-2xl p-1 m-5 hover:bg-gray-200 hover:text-gray-600 focus:outline-none"
+        className="text-3xl text-gray-500 border border-blue-500 rounded-3xl p-1 m-5 hover:bg-gray-200 hover:text-gray-600 focus:outline-none"
         onClick={showInput}
       >
         {hide ? <FaPlus /> : <FaMinus />}
