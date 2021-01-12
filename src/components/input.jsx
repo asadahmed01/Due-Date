@@ -44,9 +44,6 @@ function Input(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (task.name === "" || task.dueDate === "") return;
-    console.log(items);
-
     setItems((old) => [task, ...old]);
 
     setTask({ name: "", description: "", dueDate: "" });
@@ -58,7 +55,7 @@ function Input(props) {
   };
 
   return (
-    <div>
+    <div className="text-center mt-5">
       <button
         className="text-2xl text-gray-500 border border-blue-500 rounded-2xl p-1 m-5 hover:bg-gray-200 hover:text-gray-600 focus:outline-none"
         onClick={showInput}
@@ -95,7 +92,10 @@ function Input(props) {
             value={task.dueDate}
           />
 
-          <button className="h-10 px-5 m-2 text-blue-100 transition-colors duration-150 bg-green-600 rounded-lg focus:outline-none hover:bg-blue-700 mt-5">
+          <button
+            className="h-10 px-5 m-2 text-white transition-colors duration-150 bg-blue-600 rounded-lg focus:outline-none hover:bg-blue-700 mt-5"
+            disabled={!task.name}
+          >
             Submit
           </button>
         </form>

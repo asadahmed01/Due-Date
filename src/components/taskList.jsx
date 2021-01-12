@@ -7,7 +7,9 @@ function TaskList({ tasks, onDelete, date }) {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       // Render a completed state
-      return "COmplete";
+      return (
+        <span className="text-red-600 font-semibold">Deadline Passed</span>
+      );
     } else {
       // Render a countdown
       return (
@@ -47,7 +49,7 @@ function TaskList({ tasks, onDelete, date }) {
 
               <h3 className="text-gray-800">{task.description}</h3>
               <h3 className="text-yellow-500">{task.dueDate}</h3>
-              <h3 className="text-red-600 capitalize font-semibold my-3">{`${task.name} is due in: `}</h3>
+              <h3 className="text-yellow-900 capitalize font-semibold my-3">{`${task.name} is due in: `}</h3>
 
               <Countdown date={task.dueDate} renderer={renderer} />
             </div>
