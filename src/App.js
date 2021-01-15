@@ -11,7 +11,7 @@ function App() {
     console.log(show);
   };
   return (
-    <div>
+    <div className="relative min-h-screen">
       <NavBar showMenu={handleShow} status={show} />
       <Input />
       <Footer />
