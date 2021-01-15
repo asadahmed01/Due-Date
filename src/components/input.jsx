@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaArrowDown, FaArrowUp, FaMinus, FaPlus } from "react-icons/fa";
+import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import TaskList from "./taskList";
 import uuid from "react-uuid";
 
@@ -14,8 +14,6 @@ function Input() {
 
   const [items, setItems] = useState([]);
   const [hide, setHide] = useState(true);
-
-  //const interval = setInterval(() => setTime(calculateTimeLeft()), 1000);
 
   const handleName = (e) => {
     const name = e.currentTarget.value;
@@ -55,20 +53,6 @@ function Input() {
     setHide(!hide);
     return hide;
   };
-  //console.log(task.dueDate);
-
-  // useEffect(() => {
-  //   let newItems = [];
-  //   const interval = setInterval(() => {
-  //     const now = new Date().getTime();
-  //     const elements = [...items];
-  //     newItems = elements.filter((item) => {
-  //       return new Date(item.dueDate).getTime() > now;
-  //     });
-  //   }, 3000);
-  //   setItems(newItems);
-  //   return () => clearInterval(interval);
-  // }, []);
 
   return (
     <div className="text-center mt-5">
