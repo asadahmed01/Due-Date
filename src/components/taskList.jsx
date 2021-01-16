@@ -37,7 +37,7 @@ function TaskList({ tasks, onDelete, date }) {
   };
 
   const classes =
-    "border-l-4 border-b-4 border-blue-500 rounded-lg p-3 mt-5 bg-gray-100 w-11/12 md:w-1/2 flex place-items-center justify-between relative ";
+    "border-l-4 border-b-4 border-blue-500 rounded-lg p-3 mt-5 bg-gray-50 w-11/12 md:w-1/2 flex place-items-center justify-between relative ";
   return (
     <div className="container mx-5">
       <ul>

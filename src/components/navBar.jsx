@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars, FaCalendar } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 function NavBar({ showMenu, status }) {
   return (
@@ -21,18 +22,18 @@ function NavBar({ showMenu, status }) {
       </div>
 
       <div className={status ? "block px-4 pb-3" : "hidden"}>
-        <a
-          href="#"
+        <NavLink
+          to="/login"
           className="block text-white font-semibold hover:bg-gray-700 px-3 py-4 rounded-md"
         >
           Login
-        </a>
-        <a
-          href="#"
+        </NavLink>
+        <NavLink
+          to="/register"
           className="block text-white font-semibold hover:bg-gray-700 px-3 py-4 rounded-md"
         >
           Register
-        </a>
+        </NavLink>
       </div>
     </header>
   );

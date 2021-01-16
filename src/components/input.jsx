@@ -71,7 +71,7 @@ function Input() {
             Task Name:
           </label>
           <input
-            className="input border border-blue-500 focus:border-indigo-600 focus:outline-none text-black tracking-widest font-bold px-3 md:py-1 py-5 rounded-lg w-full md:mr-5 md:mt-5 mb-5"
+            className="input border border-blue-500 focus:border-indigo-600 focus:outline-none text-black tracking-widest font-bold px-3 md:py-1 py-5 rounded-lg w-full md:mr-5 md:mt-0 mb-5"
             type="text"
             placeholder="task name"
             onChange={handleName}
@@ -82,7 +82,7 @@ function Input() {
             Description:
           </label>
           <input
-            className="input border border-blue-500 focus:border-indigo-600 focus:outline-none text-black tracking-widest font-bold px-3 md:py-1 py-5 rounded-lg w-full md:mr-5 md:mt-5 mb-3 mt-1"
+            className="input border border-blue-500 focus:border-indigo-600 focus:outline-none text-black tracking-widest font-bold px-3 md:py-1 py-5 rounded-lg w-full md:mr-5 md:mt-1 mb-3 mt-1"
             type="text"
             placeholder="task description"
             onChange={handleDescriptioin}
@@ -92,7 +92,7 @@ function Input() {
             Choose Date:
           </label>
           <input
-            className="input border border-blue-500 focus:border-indigo-600 focus:outline-none text-black tracking-widest font-bold px-3 md:py-2 py-5 rounded-lg w-full md:mr-5 mt-1"
+            className="input border border-blue-500 focus:border-indigo-600 focus:outline-none text-black tracking-widest font-bold px-2 md:py-1 py-5 rounded-lg w-full md:mr-5 mt-1"
             type="datetime-local"
             placeholder="Due date"
             onChange={handleDate}
