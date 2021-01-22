@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import "./App.css";
 import ProtectedRoute from "./components/common/protectedRoute";
 import Footer from "./components/footer";
@@ -33,7 +33,8 @@ function App() {
           <Route path="/logout" component={Logout} />
           <ProtectedRoute path="/tasks" component={Input} />
 
-          <Route path="/" exact component={Home} />
+          <Route path="/" component={Home} />
+          <Redirect from="/Due-Dates" exact to="/" />
         </Switch>
       </div>
 
