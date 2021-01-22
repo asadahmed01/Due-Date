@@ -21,9 +21,9 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col py-8">
+      <div className="flex flex-col py-8 bg-gray-100">
         <div>
-          <h4 className="md:text-2xl font-sans font-bold text-indigo-400 tracking-widest">
+          <h4 className="md:text-2xl font-sans font-bold text-indigo-500 tracking-widest">
             Second By Second Countdown To The Deadline
           </h4>
         </div>
@@ -33,9 +33,9 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-gray-100  py-8">
+      <div className="flex flex-col  py-8">
         <div>
-          <h4 className="md:text-2xl font-sans font-bold text-indigo-400 tracking-widest">
+          <h4 className="md:text-2xl font-sans font-bold text-indigo-500 tracking-widest">
             Monitor All Your Important Dates From Your Account
           </h4>
         </div>
