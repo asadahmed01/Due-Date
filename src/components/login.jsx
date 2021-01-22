@@ -16,10 +16,13 @@ class loginForm extends Form {
 
   doSubmit = async () => {
     try {
-      await authServices.login(this.state.data.email, this.state.data.password);
+      const response = await authServices.login(
+        this.state.data.email,
+        this.state.data.password
+      );
       //
       const { state } = this.props.location;
-      window.location = state ? state.from.pathname : "/";
+      window.location = state ? state.from.pathname : "/tasks";
     } catch (ex) {
       if (ex.response && ex.response.status == 400) {
         let errors = { ...this.state.errors };

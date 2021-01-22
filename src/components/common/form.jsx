@@ -50,7 +50,7 @@ class Form extends Component {
     return (
       <button
         disabled={this.validate()}
-        className="md:h-10 h-16 w-11/12 md:w-2/5 px-5 m-2 text-white bg-blue-600 rounded-lg focus:outline-none hover:bg-blue-700 mt-5"
+        className="md:h-10 h-16 w-11/12 md:w-28 px-5 m-2 text-white bg-blue-600 rounded-lg focus:outline-none hover:bg-blue-700 mt-5"
       >
         {label}
       </button>
